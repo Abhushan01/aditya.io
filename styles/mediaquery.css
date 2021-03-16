@@ -1,0 +1,78 @@
+@media only screen and (max-width:1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hamburger{
+        border:0;
+        background-color: transparent;
+        color: #fff;
+        font-size:30px;
+        display: block;
+        margin:20px;
+        align-self: flex-end;
+    }
+    ul{
+        display:none;
+        font-size:20px;
+        background-color: #2b2c38;
+        margin:0px;
+    }
+    ul.show{
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+        padding: 10px;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .sub-section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size:15px;
+    }
+    h2{
+        font-size:30px;
+    }
+    h1{
+        font-size:50px;
+    }
+    .headshot{
+        width: 200px;
+    }
+    .hero-para{
+        font-size:20px;
+    }
+    .button{
+        height: 35px;
+        width:150px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .hero-area{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-top: 50px;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-left: 80px;
+    }
+    .social-icon{
+        font-size: 30px;
+        margin:10px;
+    }
+}
