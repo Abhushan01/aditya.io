@@ -2,7 +2,10 @@
     .project-container{
         display: flex;
         flex-wrap: wrap;
+        
     }
+
+    
     .hamburger{
         border:0;
         background-color: transparent;
@@ -12,12 +15,14 @@
         margin:20px;
         align-self: flex-end;
     }
+
     ul{
         display:none;
         font-size:20px;
         background-color: #2b2c38;
         margin:0px;
     }
+
     ul.show{
         display: block;
     }
@@ -27,9 +32,28 @@
         flex-direction: column-reverse;
         background-color: #2b2c38;
         padding: 10px;
+        justify-content:space-evenly;
     }
     .logo{
         display: none;
+      
+    }
+    li{
+        
+        padding:5px;
+    }
+    .resume{
+        margin-left:0;
+    }
+    .skillset{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .skill-icon{
+        padding: 5px;
+    }
+    .skill-cont{
+        padding: 20px;
     }
 }
 
@@ -74,5 +98,8 @@
     .social-icon{
         font-size: 30px;
         margin:10px;
+    }
+    .pic-exp{
+        display:none;
     }
 }
