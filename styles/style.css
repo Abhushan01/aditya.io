@@ -31,13 +31,16 @@ nav{
 ul{
     display: flex;
     list-style-type: none;
-    width: 500px;
+    /* width: 700px; */
     justify-content:space-around;
-    font-size:25px
+    font-size:20px;
 }
 
 li{
     text-decoration: none;
+    margin:5px;
+    padding:5px;
+    
 }
 
 h1{
@@ -194,4 +197,51 @@ a{
 
 .hamburger:focus{
     outline: 0;
+}
+
+.resume{
+    margin-top: 0;
+    width:120px;
+    height:35px;
+    font-size:20px;
+
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   padding: 80px;
+}
+.skillset{
+  display: flex;
+  justify-content: space-around;
+  color:#ffa582;
+  flex-wrap:wrap;
+}
+
+.skill-icon{
+  padding: 5px;
+    font-size:80px;
+    color:#ffa582;
+  
+}
+
+.skill-cont{
+    padding:30px;
+}
+
+.xperia{
+    list-style: decimal-leading-zero;
+    
+}
+
+.xp{
+    font-size:17px;
+    align-items:center;
+    align-self: center;
+}
+
+.pic-exp{
+    width:400px;
+    padding:50px;
 }
