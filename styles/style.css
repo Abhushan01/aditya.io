@@ -169,6 +169,13 @@ h2{
     width: 200px;
     margin-top: 30px;
 }
+
+.project3-image{
+    width:150px;
+    height: 150px;
+    border-radius: 500px;
+    margin-top: 70px;
+}
 .subtext{
     font-size:15px;
     font-weight:300;
