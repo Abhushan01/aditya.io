@@ -103,6 +103,13 @@
         display:none;
     }
 
+    .project1-image{
+        width:130px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    
     .project3-image{
         width:100px;
         height:100px;
