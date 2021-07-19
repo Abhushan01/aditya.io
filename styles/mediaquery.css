@@ -124,11 +124,11 @@
     transform: scale(1.1) translateY(1.5px);
   }
 
-  footer h2 {
+  footer > h2 {
     font-size: 20px;
   }
-  footer a,
-  p {
+  footer > a,
+  footer > p {
     font-size: 12px;
   }
 }
