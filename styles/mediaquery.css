@@ -1,122 +1,134 @@
-@media only screen and (max-width:1000px){
-    .project-container{
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    
-    .hamburger{
-        border:0;
-        background-color: transparent;
-        color: #fff;
-        font-size:30px;
-        display: block;
-        margin:20px;
-        align-self: flex-end;
-    }
+  .hamburger {
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    margin: 20px;
+    align-self: flex-end;
+  }
 
-    ul{
-        display:none;
-        font-size:20px;
-        background-color: #2b2c38;
-        margin:0px;
-    }
+  ul {
+    display: none;
+    font-size: 20px;
+    background-color: #2b2c38;
+    margin: 0px;
+  }
 
-    ul.show{
-        display: block;
-    }
+  ul.show {
+    display: block;
+  }
 
-    nav{
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #2b2c38;
-        padding: 10px;
-        justify-content:space-evenly;
-    }
-    .logo{
-        display: none;
-      
-    }
-    li{
-        
-        padding:5px;
-    }
-    .resume{
-        margin-left:0;
-    }
-    .skillset{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .skill-icon{
-        padding: 5px;
-    }
-    .skill-cont{
-        padding: 20px;
-    }
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #2b2c38;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  .logo {
+    display: none;
+  }
+  li {
+    padding: 5px;
+  }
+  .resume {
+    margin-left: 0;
+  }
+  .skillset {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .skill-icon {
+    padding: 5px;
+  }
+  .skill-cont {
+    padding: 20px;
+  }
 }
 
-@media only screen and (max-width:700px){
-    .sub-section{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        font-size:15px;
-    }
-    h2{
-        font-size:30px;
-    }
-    h1{
-        font-size:50px;
-    }
-    .headshot{
-        width: 200px;
-    }
-    .hero-para{
-        font-size:20px;
-    }
-    .button{
-        height: 35px;
-        width:150px;
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .hero-area{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        margin-top: 50px;
-    }
-    .socials{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 50px;
-       position: relative;
-       margin-right: 20%;
-    }
-    .social-icon{
-        font-size: 30px;
-        margin:10px;
-    }
-    .pic-exp{
-        display:none;
-    }
+@media only screen and (max-width: 700px) {
+  .sub-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .hero-text {
+    margin-top: 35px;
+  }
 
-    .project1-image{
-        width:130px;
-        margin-left: 35px;
-        margin-right: 35px;
-    }
+  .headshot {
+    width: 200px;
+  }
+  .hero-para {
+    font-size: 20px;
+  }
+  .button {
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+  }
 
-    
-    .project3-image, .project4-image,.project5-image,.project6-image,.project7-image,.project8-image{
-        width:100px;
-        height:100px;
-        margin-top: 40px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-     
+  .hero-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+  }
+  .social-icon {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .pic-exp {
+    display: none;
+  }
+
+  .project1-image {
+    width: 130px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .project3-image,
+  .project4-image,
+  .project5-image,
+  .project6-image,
+  .project7-image,
+  .project8-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .project-card:hover {
+    margin: 25px;
+    transform: scale(1.1) translateY(1.5px);
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+  footer a,
+  p {
+    font-size: 12px;
+  }
 }
