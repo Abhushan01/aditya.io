@@ -1,214 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aditya is in his final year of B.Tech in Computer Science Engineering at UIET, KUK. He knows C, C++, Python, and front-end web programming. This webpage is intended to highlight his qualifications, skills, and accomplished projects.">
     <title>Aditya</title>
-
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/mediaquery.css">
-    <link rel="stylesheet" href="./styles/animations.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/assets/favicon/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"></head>
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
-
-<body>
-    <section class="hero">
-        
-        <nav>
-            <img src="./images/assets/A.png" alt="logo" class="logo"/>
-            <ul id="nav-list">
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact</a></li>
-                <li><a href="./files/Aditya_UIET-KUK_2021.pdf" target="blank"><div class="button resume">Resume</div></a></li>
-            </ul>
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-
-        <div class="hero-area">
-            <div class="hero-text">
-                <h1>Aditya</h1>
-                <p class="hero-para">Python Programmer | Frontend Developer | Illustrator</p>
-                <a href=#about-me><div class="button btn-abt">About me</div></a>
-            </div>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaquery.css" />
+    <link rel="shortcut icon" href="./images/assets/favicon.ico" type="image/x-icon">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Bungee+Inline&family=Monoton&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav-section -->
+    <nav id="navbar">
+      <navbar-brand><a href="#home">A</a></navbar-brand>
+      <div class="nav-items">
+        <div class="btn">
+          <div class="dayNight">
+            <span class="iconify" data-icon="ci:moon"></span>
+            <span class="iconify" data-icon="cil:sun"></span>
+          </div>
           
-
-            <div class="socials">
-                <div><a href="https://twitter.com/abhushan01" class="social" target="blank"><i class="social-icon fab fa-twitter"></i></a></div>
-                <div><a href="https://www.linkedin.com/in/aditya-4a6756186/"class="social" target="blank"><i class="social-icon fab fa-linkedin-in"></i></a></div>
-                <div><a href="http://github.com/abhushan01"class="social" target="blank"><i class="social-icon fab fa-github"></i></a></div>
-                <div><a href="http://instagram.com/a.b.kumar_draws"class="social"target="blank"><i class="social-icon fab fa-instagram"></i></a></div>
-            </div>
-        </div>  
-    </section>
-    
-    <section class="sub-section">
-        <div class="information" id="about-me">
-            <h2>About Me</h2>
-            <p>Currently doing my B.Tech from UIET, Kurukshetra University Kurukshetra in Computer Science.
-            I discovered my passion for web development and designing when building my first website for my high-school.<br>
-            When I am not working, I'm drawing portraits 🎨 or writing my blog 📝.<br>
-            <!-- Visit my Art Gallery and Blog here. -->
-        </p>
+            <div class="btn-Resume button"><a href="./files/Aditya_UIET-KUK_2021.pdf" target="blank">Resume</a></div>
+          </a>
+          Menu &nbsp;
+          <div class="menuToggle">
+            <span class="iconify" data-icon="ci:menu-alt-03"></span>
+            <span class="iconify" data-icon="bytesize:close"></span>
+          </div>
         </div>
+      </div>
+    </nav>
+    <section class="navigation">
+      <span style="--i: 0"></span>
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
 
-        <div class="headshot-container"><img src="./images/profile-square.png" alt="Aditya" class="headshot"/></div>
-
+      <ul>
+        <a href="#about-me"><li onclick="hideMenu()">About me</li></a>
+        <a href="#skills"><li onclick="hideMenu()">Skills</li></a>
+        <a href="#experience"><li onclick="hideMenu()">Experience</li></a>
+        <a href="#projects"><li onclick="hideMenu()">Projects</li></a>
+        <a href="#contact"><li onclick="hideMenu()">Contact</li></a>
+      </ul>
     </section>
 
-    <section class="sub-section skill" id="skills">
-        <h2>Skills</h2>
-        <div class="skillset">
-            <div class="skill-cont"><i class="fab fa-html5 skill-icon"></i><br>html-5</div>
-            <div class="skill-cont"><i class="fab fa-css3 skill-icon"></i><br>css3</div>
-            <div class="skill-cont"><i class="fab fa-bootstrap skill-icon"></i><br>Bootstrap</div>
-            <div class="skill-cont"><i class="fab fa-js skill-icon"></i><br>JavaScript</div>
-            <div class="skill-cont"><i class="fab fa-python skill-icon"></i><br>Python</div>
-            <div class="skill-cont"><i class="fab fa-android skill-icon"></i><br>Android Development</div>
-            <div class="skill-cont" ><img src="./images/skills/c.png" style="width: 80px;"><br>C</div>
-            <div class="skill-cont" ><img src="./images/skills/c++.png" style="width: 80px;"><br>C++</div>
-            <div class="skill-cont" ><img src="./images/skills/kotlin.png" style="width: 80px;"><br>Kotlin</div>
-            <div class="skill-cont" ><img src="./images/skills/photo.png" style="width: 80px;"><br>Adobe Photoshop</div>
-            <div class="skill-cont" ><img src="./images/skills/ml.png" style="width: 80px;"><br>Data Science</div>
-            <div class="skill-cont" ><img src="./images/skills/illustrations.png" style="width: 80px;"><br>Illustrations</div>
-            <div class="skill-cont" ><img src="./images/skills/responsive.png" style="width: 80px; height:80px"><br>Responsive Web-Design</div>
-            <div class="skill-cont" ><img src="./images/skills/krita.png" style="width: 80px;"><br>Krita</div>
-            
-            
-            
-            
+    <!-- -----home-section------ -->
+    <main id="home">
+      <div class="hero-content">
+        <div class="hero-title">Aditya</div>
+        <div class="hero-para">
+          Software Engineer | Frontend Developer | Illustrator
         </div>
+        <div class="socials">
+          <div>
+            <a href="https://twitter.com/abhushan01" target="blank"
+              ><span
+                class="iconify"
+                data-icon="ant-design:twitter-outlined"
+              ></span
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/aditya-4a6756186/"
+              target="blank"
+              ><span class="iconify" data-icon="bx:bxl-linkedin"></span
+            ></a>
+          </div>
+          <div>
+            <a href="http://github.com/abhushan01" target="blank"
+              ><span class="iconify" data-icon="ant-design:github-filled"></span
+            ></a>
+          </div>
+          <div>
+            <a href="http://instagram.com/a.b.kumar_draws" target="blank"
+              ><span
+                class="iconify"
+                data-icon="akar-icons:instagram-fill"
+              ></span
+            ></a>
+          </div>
+        </div>
+        <div class="btn-About button"><a href="#about-me">
+          About Me
+          <span class="iconify" data-icon="akar-icons:arrow-down"></span>
+        </a>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="cont" id="about-me">
+        <div class="section-head">About me</div>
+        <div class="profile-info">
+          <div class="profile-pic">
+            <img src="./images/assets/profile-photo.png" alt="Aditya" />
+          </div>
+          <div class="profile-content">
+            Currently doing my B.tech from UIET, Kurukshetra University
+            Kurukshetra in Computer Science. I discovered my passion for web
+            development and designing while building my first a website for
+            high-school. <br /><br />
+            When I am not working, I’m drawing portraits 🎨 or writing my blog
+            📝.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="sub-section xp" id="experience">
-        <div>
-        <h2>Experience</h2>
-        
-            <ol class="xperia">
-                <h3><li >August - October, 2020:</li></h3>
-                <dl><dd>Graphic Designer at Yuva and Seva Foundation</dd></dl>
-                <h3><li >June - July,2020:</li></h3>
-                <dl><dd>Online Training in Android App Development at Internshala</dd></dl>
-                <h3><li >June - July, 2019:</li></h3>
-                <dl><dd>Industrial Training in Machine Learning using Python at NIELIT,Kurukshetra</dd></dl>
+    <section>
+      <div class="cont" id="skills">
+        <div class="section-head">Skills</div>
+        <div class="skill-set">
+          <div>
+            <span class="iconify" data-icon="ant-design:html5-filled"></span
+            ><br />
+            html-5
+          </div>
+          <div>
+            <span class="iconify" data-icon="cib:css3"></span><br />css3
+          </div>
+          <div>
+            <span class="iconify" data-icon="mdi:bootstrap"></span
+            ><br />Bootstrap
+          </div>
+          <div>
+            <span class="iconify" data-icon="akar-icons:javascript-fill"></span
+            ><br />Javascript
+          </div>
+          <div>
+            <span class="iconify" data-icon="akar-icons:react-fill"></span
+            ><br />React
+          </div>
+          <div>
+            <span class="iconify" data-icon="akar-icons:python-fill"></span
+            ><br />Python
+          </div>
+          <div>
+            <span class="iconify" data-icon="teenyicons:c-solid"></span><br />C
+          </div>
+          <div>
+            <span class="iconify" data-icon="bx:bxl-c-plus-plus"></span
+            ><br />C++
+          </div>
+          <div>
+            <span class="iconify" data-icon="fa-brands:git-alt"></span><br />Git
+          </div>
+          <div>
+            <span class="iconify" data-icon="akar-icons:vscode-fill"></span
+            ><br />Visual Studio
+          </div>
+          <div>
+            <span class="iconify" data-icon="file-icons:adobe-photoshop"></span
+            ><br />Adobe Photoshop
+          </div>
+          <div>
+            <span
+              class="iconify"
+              data-icon="emojione-monotone:artist-palette"
+            ></span
+            ><br />Illustrations
+          </div>
+          <div>
+            <span class="iconify" data-icon="mdi:responsive"></span
+            ><br />Responsive Web-Design
+          </div>
+          <div>
+            <span class="iconify" data-icon="simple-icons:krita"></span
+            ><br />Krita
+          </div>
+          <div>
+            <span class="iconify" data-icon="cib:django"></span><br />Django
+          </div>
+          <div>
+            <span class="iconify" data-icon="gg:figma"></span><br />Figma
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cont" id="experience">
+        <div class="section-head">Experience</div>
+        <div class="experience-info">
+          <div class="experience-content">
+            <ol>
+              <li>July - August, 2021:</li>
+              <dl>
+                <dd>
+                  Interned as UI designer at OneTick Technologies Pvt ltd.
+                </dd>
+              </dl>
+              <dl>
+                <dd>
+                  Designed User Interface for Mobile and web application using
+                  <b>Figma</b> for Blood Bank Management platform.
+                </dd>
+              </dl>
+              <li>August - October, 2020:</li>
+              <dl><dd>Graphic Designer at Yuva and Seva Foundation.</dd></dl>
+              <dl>
+                <dd>
+                  Led the Graphics team and designed graphics and infographics
+                  for social-media handles of the NGO.
+                </dd>
+              </dl>
+              <li>June - July,2020:</li>
+              <dl>
+                <dd>
+                  Online Training in Android App Development at Internshala
+                </dd>
+              </dl>
+              <dl>
+                <dd>
+                  Developed an e-commerce Android Appication named<b>
+                    Artists Assemble</b
+                  >
+                  using Kotlin, using which users can purchase artworks.
+                </dd>
+              </dl>
+              <li>June - July, 2019:</li>
+              <dl>
+                <dd>
+                  Industrial Training in Machine Learning using Python at
+                  NIELIT,Kurukshetra.
+                </dd>
+              </dl>
+              <dl>
+                <dd>
+                  Learned Data handling, data visualization, result prediction
+                  using Ml algorithms and Natural Language Processing using
+                  Python.
+                </dd>
+              </dl>
             </ol>
+            <p>
+              <b
+                >Volunteered as Graphics Designer at Developer Students Club
+                UIET (2020-21)</b
+              >
+            </p>
+          </div>
+
+          <div class="experience-graphics">
+            <img
+              src="./images/assets/experience.png"
+              alt="A girl programming on laptop"
+            />
+          </div>
         </div>
-        <div><img src="./images/assets/experience.png" alt="experience" class="pic-exp"></div>
-
+      </div>
     </section>
 
-
-
-    <section class="sub-section-alternative" id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="./images/assets/projects/Avengers_Logo.png" alt="Artists Assemble" class="project1-image"/>
-                <h3>Artists Assemble</h3>
-                <p class="subtext">E-Commerce Mobile Application for purchasing artworks online, made using Kotlin.</p>
-                <hr>
-                <p class="subtext"><a  class="project-link" href="https://github.com/Abhushan01/ArtistAssemble" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
+    <section>
+      <div class="cont" id="projects">
+        <div class="section-head">Projects</div>
+        <div class="project-content">
+          <div class="project-card card-1">
+            <div class="project-thumbnail">
+              <img
+                src="./images/project-thumbnails/covi-thumb.png"
+                alt="project-thumbnail"
+              />
             </div>
-            <div class="project-card">
-                <img src="./images/assets/projects/ml.png" alt="ML project" class="project2-image"/>
-                <h3>Diabetes Prediction Using ML</h3>
-                <p class="subtext">Training given set of data to predict whether off-srings will inherit diabetes from their mothers.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/Abhushan01/Data-Handling-and-Result-Prediction-Using-ML" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
+            <div class="project-title">Covi-Checker</div>
+            <div class="project-desc">
+              ML based COVID-19 Result predictions Django web application.
             </div>
-            <div class="project-card">
-                <img src="./images/assets/projects/pls-thumb.PNG" alt="web dev" class="project3-image"/>
-                <h3>Product Landing Site</h3>
-                <p class="subtext">Product landing site development for Artists Assemble Mobile Application using Bootstrap.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/Abhushan01/Product-Landing-Page" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
-                <p class="subtext"><a class="project-link" href="https://abhushan01.github.io/Product-Landing-Page/" target="blank"><i class="icon fas fa-external-link-alt" style="font-size:20px;"></i> Visit here</a></p>
+            <div class="projects-links">
+              <a
+                href="https://github.com/Abhushan01/Covi-Checker"
+                target="blank"
+              >
+                <p>
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:github-filled"
+                  ></span>
+                  View here
+                </p>
+              </a>
             </div>
+          </div>
 
-            <div class="project-card">
-                <img src="./images/assets/projects/cupcake.png" alt="cupcake project" class="project4-image"/>
-                <h3>Kwazy Cupcakes</h3>
-                <p class="subtext">Pattern matching game inspired from Brooklyn-99 TV series made using Vanilla JavaScript.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/Abhushan01/kwazy-cupcakes" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
-                <p class="subtext"><a class="project-link" href="https://abhushan01.github.io/kwazy-cupcakes/" target="blank"><i class="icon fas fa-external-link-alt" style="font-size:20px;"></i> Visit here</a></p>
+          <div class="project-card card-2">
+            <div class="project-thumbnail">
+              <img
+                src="./images/project-thumbnails/Avengers_Logo.png"
+                alt="project-thumbnail"
+              />
             </div>
-         </div>
-         <!-- second row for project-cards -->
-         <div class="project-container">
-            <div class="project-card">
-                <img src="./images/assets/projects/tu-thumb.PNG" alt="Text Utils" class="project5-image"/>
-                <h3>TextUtils</h3>
-                <p class="subtext">Text Analyzing Web Application made using Django Framework.</p>
-                <hr>
-                <p class="subtext"><a  class="project-link" href="https://github.com/Abhushan01/TextUtils" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
+            <div class="project-title">Artists Assemble</div>
+            <div class="project-desc">
+              E-Commerce Mobile Application for purchasing artworks online, made
+              using Kotlin.
             </div>
-
-            <div class="project-card">
-                <img src="./images/assets/projects/covi-thumb.png" alt="Covi-Checker" class="project6-image"/>
-                <h3>Covi-Checker</h3>
-                <p class="subtext">ML based COVID-19 Result predictions Django web application.</p>
-                <hr>
-                <p class="subtext"><a  class="project-link" href="https://github.com/Abhushan01/Covi-Checker" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
+            <div class="projects-links">
+              <a
+                href="https://github.com/Abhushan01/ArtistAssemble"
+                target="blank"
+              >
+                <p>
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:github-filled"
+                  ></span>
+                  View here
+                </p>
+              </a>
             </div>
+          </div>
 
-            <div class="project-card">
-                <img src="./images/assets/projects/pass-thumb.png" alt="password-charades" class="project7-image"/>
-                <h3>Password Charades</h3>
-                <p class="subtext">Random Password Generator made using JavaScript.</p>
-                <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/Abhushan01/Password-Charades" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
-                <p class="subtext"><a class="project-link" href="https://abhushan01.github.io/Password-Charades/" target="blank"><i class="icon fas fa-external-link-alt" style="font-size:20px;"></i> Visit here</a></p>
-                </div>
-
-                <div class="project-card">
-                    <img src="./images/assets/projects/type-thumb.png" alt="typetester" class="project8-image"/>
-                    <h3>TypeTester</h3>
-                    <p class="subtext">Speed Typing Game made using Vanilla JavaScript.</p>
-                    <hr>
-                    <p class="subtext"><a class="project-link" href="https://github.com/Abhushan01/Type-Tester" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
-                    <p class="subtext"><a class="project-link" href="https://abhushan01.github.io/Type-Tester/" target="blank"><i class="icon fas fa-external-link-alt" style="font-size:20px;"></i> Visit here</a></p>
-                    </div>
-                </div>
+          <div class="project-card card-3">
+            <div class="project-thumbnail">
+              <img
+                src="./images/project-thumbnails/ml.png"
+                alt="project-thumbnail"
+              />
             </div>
-            
-         </div>
-
-         <!-- third row for project-cards -->
-         <!-- <div class="project-container">
-
-            <div class="project-card">
-                <img src="./images/assets/projects/tu-thumb.PNG" alt="Text Utils" class="project5-image"/>
-                <h3>TextUtils</h3>
-                <p class="subtext">Text Analyzing Web Application made using Django Framework.</p>
-                <hr>
-                <p class="subtext"><a  class="project-link" href="https://github.com/Abhushan01/TextUtils" target="blank"><i class="icon fab fa-github" style="font-size:20px;"></i> View here</a></p>
+            <div class="project-title">Diabetes Prediction Using ML</div>
+            <div class="project-desc">
+              Training given set of data to predict whether off-srings will
+              inherit diabetes from their mothers.
             </div>
+            <div class="projects-links">
+              <a
+                href="https://github.com/Abhushan01/Data-Handling-and-Result-Prediction-Using-ML"
+                target="blank"
+              >
+                <p>
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:github-filled"
+                  ></span>
+                  View here
+                </p>
+              </a>
+            </div>
+          </div>
 
-            
-         </div> -->
+          <div class="project-card card-4">
+            <div class="project-thumbnail">
+              <img
+                src="./images/project-thumbnails/pls-thumb.PNG"
+                alt="project-thumbnail"
+              />
+            </div>
+            <div class="project-title">Product Landing Site</div>
+            <div class="project-desc">
+              Product landing site development for Artists Assemble Mobile
+              Application using Bootstrap.
+            </div>
+            <div class="projects-links">
+              <a
+                href="https://github.com/Abhushan01/Product-Landing-Page"
+                target="blank"
+              >
+                <p>
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:github-filled"
+                  ></span>
+                  View here
+                </p>
+              </a>
+              <a
+                href="https://abhushan01.github.io/Product-Landing-Page/"
+                target="blank"
+              >
+                <p>
+                  <span class="iconify" data-icon="bx:bx-link-external"></span>
+                  Visit here
+                </p>
+              </a>
+            </div>
+          </div>
 
+          <div class="project-card card-5">
+            <div class="project-thumbnail">
+              <img
+                src="./images/project-thumbnails/cupcake.png"
+                alt="project-thumbnail"
+              />
+            </div>
+            <div class="project-title">Kwazy Cupcakes</div>
+            <div class="project-desc">
+              Pattern matching game inspired from Brooklyn-99 TV series made
+              using Vanilla JavaScript.
+            </div>
+            <div class="projects-links">
+              <a
+                href="https://github.com/Abhushan01/kwazy-cupcakes"
+                target="blank"
+              >
+                <p>
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:github-filled"
+                  ></span>
+                  View here
+                </p>
+              </a>
+              <a
+                href="https://abhushan01.github.io/kwazy-cupcakes/"
+                target="blank"
+              >
+                <p>
+                  <span class="iconify" data-icon="bx:bx-link-external"></span>
+                  Visit here
+                </p>
+              </a>
+            </div>
+          </div>
 
+          <div class="project-card card-4">
+            <div class="project-thumbnail">
+              <img
+                src="./images/project-thumbnails/tu-thumb.PNG"
+                alt="project-thumbnail"
+              />
+            </div>
+            <div class="project-title">TextUtils</div>
+            <div class="project-desc">
+              Text Analyzing Web Application made using Django Framework.
+            </div>
+            <div class="projects-links">
+              <a href="https://github.com/Abhushan01/TextUtils" target="blank">
+                <p>
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:github-filled"
+                  ></span>
+                  View here
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <footer id="contact-me">
-        <h2>Contact me</h2>
-        <a href="mailto:adityabhushan01@gmail.com"><i class="far fa-envelope" style="font-size: 20px;"></i> &nbsp;&nbsp;adityabhushan01@gmail.com</a>
-        <p>© Copyright 2021 Aditya</p>
-    </footer>    
 
-
+    <footer id="contact">
+      <div class="footer-head">Contact Me</div>
+      <div class="footer-body">
+        <p>
+          <a href="mailto:adityabhushan01@gmail.com">
+            <span class="iconify" data-icon="ant-design:mail-filled"></span>
+            adityabhushan01@gmail.com
+          </a>
+        </p>
+        <p>&copy; Copyright <span id="year"></span> Aditya</p>
+      </div>
+    </footer>
     <script src="./script/app.js"></script>
-</body>
+  </body>
 </html>

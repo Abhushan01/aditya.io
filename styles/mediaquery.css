@@ -1,134 +1,163 @@
-@media only screen and (max-width: 1000px) {
-  .project-container {
+@import url("./style.css");
+
+@media (min-width: 710px) {
+  #about-me {
+    padding-bottom: 0;
+  }
+  .section-head {
+    margin-top: 1em;
+  }
+  #about-me .section-head,
+  #experience .section-head {
+    justify-self: right;
+    width: 50%;
+  }
+  .profile-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 4em;
+    padding-right: 4em;
   }
-
-  .hamburger {
-    border: 0;
-    background-color: transparent;
-    color: #fff;
-    font-size: 30px;
-    display: block;
-    margin: 20px;
-    align-self: flex-end;
+  .profile-content {
+    padding: 2em 1em 0 4em;
   }
-
-  ul {
-    display: none;
-    font-size: 20px;
-    background-color: #2b2c38;
-    margin: 0px;
+  #skills {
+    grid-template-rows: repeat(6, 1fr);
   }
-
-  ul.show {
-    display: block;
+  #skills .section-head,
+  #projects .section-head {
+    justify-self: left;
+    width: 50%;
   }
-
-  nav {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: #2b2c38;
-    padding: 10px;
-    justify-content: space-evenly;
-  }
-  .logo {
-    display: none;
-  }
-  li {
-    padding: 5px;
-  }
-  .resume {
-    margin-left: 0;
-  }
-  .skillset {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .skill-icon {
-    padding: 5px;
-  }
-  .skill-cont {
-    padding: 20px;
+  .skill-set {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .sub-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 15px;
+@media (min-width: 800px) {
+  .project-content {
+    grid-template-columns: repeat(2, 1fr);
   }
-  h2 {
-    font-size: 30px;
-  }
-  h1 {
-    font-size: 50px;
-  }
-  .hero-text {
-    margin-top: 35px;
-  }
+}
 
-  .headshot {
-    width: 200px;
-  }
-  .hero-para {
-    font-size: 20px;
-  }
-  .button {
-    height: 35px;
-    width: 150px;
-    font-size: 20px;
+@media (min-width: 420px) {
+  #home .hero-para {
+    width: 100%;
     text-align: center;
   }
+}
 
-  .hero-area {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+@media (min-width: 940px) {
+  .skill-set {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 3.5em;
+  }
+}
+
+@media (min-width: 1152px) {
+  :root {
+    --hero-text: 99px;
+    --hero-para: 30px;
+    --navigation-text: 30px;
+    --general-body-text: 18px;
+    --brand-text: 55px;
+    --section-heading: 41px;
+    --project-title: 30px;
+  }
+  .iconify {
+    font-size: 25px;
+  }
+
+  nav .nav-items {
+    margin-right: 5vw;
+  }
+
+  navbar-brand {
+    padding-left: 30px;
+  }
+
+  .btn-Resume {
+    margin: 0 4em 0 4em;
+  }
+
+  .button {
+    width: 140px;
+    height: 30px;
+    padding-top: 4px;
+  }
+  #home {
+    background-position: center 35%;
+  }
+  .dark #home {
+    background-position: center 35%;
+  }
+
+  #home .hero-title {
+    margin-top: 2em;
+  }
+  #home .hero-para {
+    white-space: nowrap;
+    margin-top: 1em;
   }
   .socials {
+    margin-top: 2em;
+  }
+  .socials div .iconify {
+    font-size: 50px;
+  }
+
+  .btn-About {
+    margin-top: 2em;
+  }
+
+  .section-head {
+    background-size: 250px;
+  }
+  .profile-pic img {
+    width: 370px;
+  }
+  #skills {
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .skill-set .iconify {
+    font-size: 60px;
+  }
+
+  .experience-info {
     display: flex;
-    flex-direction: row;
-  }
-  .social-icon {
-    font-size: 30px;
-    margin: 10px;
-  }
-  .pic-exp {
-    display: none;
+    flex-direction: column;
   }
 
-  .project1-image {
-    width: 130px;
-    margin-left: 35px;
-    margin-right: 35px;
+  .experience-graphics {
+    text-align: right;
   }
+  .experience-graphics img {
+    display: inline-block;
+  }
+  .project-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-card .project-thumbnail img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+  }
+  .footer-body p {
+    margin: 0.5em;
+  }
+}
 
-  .project3-image,
-  .project4-image,
-  .project5-image,
-  .project6-image,
-  .project7-image,
-  .project8-image {
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
+@media (min-width: 1264px) {
+  .project-card {
+    width: 320px;
   }
+}
 
-  .project-card:hover {
-    margin: 25px;
-    transform: scale(1.1) translateY(1.5px);
-  }
-
-  footer > h2 {
-    font-size: 20px;
-  }
-  footer > a,
-  footer > p {
-    font-size: 12px;
+@media (min-width: 1310px) {
+  :root {
+    --hero-para: 36px;
   }
 }
