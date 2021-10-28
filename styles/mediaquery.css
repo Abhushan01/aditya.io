@@ -1,0 +1,163 @@
+@import url("./style.css");
+
+@media (min-width: 710px) {
+  #about-me {
+    padding-bottom: 0;
+  }
+  .section-head {
+    margin-top: 1em;
+  }
+  #about-me .section-head,
+  #experience .section-head {
+    justify-self: right;
+    width: 50%;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: row;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .profile-content {
+    padding: 2em 1em 0 4em;
+  }
+  #skills {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  #skills .section-head,
+  #projects .section-head {
+    justify-self: left;
+    width: 50%;
+  }
+  .skill-set {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .project-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 420px) {
+  #home .hero-para {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 940px) {
+  .skill-set {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 3.5em;
+  }
+}
+
+@media (min-width: 1152px) {
+  :root {
+    --hero-text: 99px;
+    --hero-para: 30px;
+    --navigation-text: 30px;
+    --general-body-text: 18px;
+    --brand-text: 55px;
+    --section-heading: 41px;
+    --project-title: 30px;
+  }
+  .iconify {
+    font-size: 25px;
+  }
+
+  nav .nav-items {
+    margin-right: 5vw;
+  }
+
+  navbar-brand {
+    padding-left: 30px;
+  }
+
+  .btn-Resume {
+    margin: 0 4em 0 4em;
+  }
+
+  .button {
+    width: 140px;
+    height: 30px;
+    padding-top: 4px;
+  }
+  #home {
+    background-position: center 35%;
+  }
+  .dark #home {
+    background-position: center 35%;
+  }
+
+  #home .hero-title {
+    margin-top: 2em;
+  }
+  #home .hero-para {
+    white-space: nowrap;
+    margin-top: 1em;
+  }
+  .socials {
+    margin-top: 2em;
+  }
+  .socials div .iconify {
+    font-size: 50px;
+  }
+
+  .btn-About {
+    margin-top: 2em;
+  }
+
+  .section-head {
+    background-size: 250px;
+  }
+  .profile-pic img {
+    width: 370px;
+  }
+  #skills {
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .skill-set .iconify {
+    font-size: 60px;
+  }
+
+  .experience-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-graphics {
+    text-align: right;
+  }
+  .experience-graphics img {
+    display: inline-block;
+  }
+  .project-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-card .project-thumbnail img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+  }
+  .footer-body p {
+    margin: 0.5em;
+  }
+}
+
+@media (min-width: 1264px) {
+  .project-card {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1310px) {
+  :root {
+    --hero-para: 36px;
+  }
+}
